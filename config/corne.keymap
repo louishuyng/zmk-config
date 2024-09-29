@@ -79,7 +79,7 @@
         browser {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &kp LG(T)    &trans                    &trans                     &trans                    &kp LG(L)                  &trans  &trans
-&to 0   &trans  &trans  &trans  &trans  &trans       &kp LA(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(LEFT_BRACKET))  &kp LA(LS(RIGHT_BRACKET))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp LA(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(LEFT_BRACKET))  &kp LA(LS(RIGHT_BRACKET))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans                    &trans                     &trans                    &trans                     &trans  &trans
                         &trans  &trans  &trans       &trans                    &kp LG(W)                  &trans
             >;
