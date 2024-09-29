@@ -16,6 +16,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp LEFT_SHIFT>, <&tog 1>;
         };
+
+        double_caps: double_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_CAPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp CAPS>, <&tog 4>;
+        };
     };
 
     keymap {
@@ -29,10 +37,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&double_shift     &kp Q  &kp W  &kp E             &kp R        &kp T                     &kp Y    &kp U          &kp I         &kp O    &kp P     &kp BACKSLASH
-&kp CAPS          &kp A  &kp S  &kp D             &kp F        &kp G                     &kp H    &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C             &kp V        &kp B                     &kp N    &kp M          &kp COMMA     &kp DOT  &kp FSLH  &lt 3 LG(SPACE)
-                                &kp LEFT_COMMAND  &lt 2 SPACE  &mt LA(LEFT_SHIFT) TAB    &kp RET  &kp BACKSPACE  &kp LEFT_ALT
+&double_shift     &kp Q  &kp W  &kp E             &kp R      &kp T                     &kp Y    &kp U          &kp I         &kp O    &kp P     &kp BACKSLASH
+&double_caps      &kp A  &kp S  &kp D             &kp F      &kp G                     &kp H    &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C             &kp V      &kp B                     &kp N    &kp M          &kp COMMA     &kp DOT  &kp FSLH  &lt 3 LG(SPACE)
+                                &kp LEFT_COMMAND  &lt 2 TAB  &mt LS(LEFT_ALT) SPACE    &kp RET  &kp BACKSPACE  &kp LEFT_ALT
             >;
         };
 
@@ -66,7 +74,7 @@
         browser {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &kp LG(T)    &trans                    &trans                     &trans                    &kp LG(L)                  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &kp LA(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(LEFT_BRACKET))  &kp LA(LS(RIGHT_BRACKET))  &trans  &trans
+&to 0   &trans  &trans  &trans  &trans  &trans       &kp LA(LS(LEFT_BRACKET))  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(LEFT_BRACKET))  &kp LA(LS(RIGHT_BRACKET))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans                    &trans                     &trans                    &trans                     &trans  &trans
                         &trans  &trans  &trans       &trans                    &trans                     &trans
             >;
