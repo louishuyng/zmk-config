@@ -22,6 +22,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL>, <&kp LEFT_SHIFT>;
         };
+
+        number_utils: number_utils {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NUMBER_UTILS";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 3>;
+        };
     };
 
     keymap {
@@ -37,7 +44,7 @@
             bindings = <
 &kp TAB       &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U          &kp I              &kp O    &kp P     &kp BACKSLASH
 &kp CAPSLOCK  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J          &kp K              &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&ctrl_shift   &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M          &kp COMMA          &kp DOT  &kp FSLH  &mo 3
+&ctrl_shift   &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M          &kp COMMA          &kp DOT  &kp FSLH  &number_utils
                             &kp LEFT_GUI  &mo 2  &kp SPACE    &kp RET  &kp BACKSPACE  &app_or_spotlight
             >;
         };
@@ -55,7 +62,7 @@
             bindings = <
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp PIPE
 &trans     &kp CARET        &kp AMPERSAND  &kp ASTERISK  &trans      &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS              &kp MINUS              &trans  &trans
-&mo 1      &kp LEFT_ALT     &mo 4          &trans        &trans      &trans         &kp TILDE         &kp EQUAL          &kp UNDERSCORE        &trans                 &trans  &trans
+&trans     &kp LEFT_ALT     &mo 4          &trans        &trans      &trans         &kp TILDE         &kp EQUAL          &kp UNDERSCORE        &trans                 &trans  &trans
                                            &trans        &trans      &trans         &trans            &trans             &trans
             >;
         };
