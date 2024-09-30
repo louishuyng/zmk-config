@@ -1,2 +1,2 @@
 ### Keymap drawer
-![alt text](./screenshot/keymap_drawer.png)
+![alt text](./screenshot/keymap_drawer.svg)
