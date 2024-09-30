@@ -9,11 +9,11 @@
 
 / {
     behaviors {
-        cmd_alt: cmd_alt {
+        ctrl_cmd: ctrl_cmd {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMD_ALT";
+            label = "CTRL_CMD";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&kp LEFT_ALT>;
+            bindings = <&kp LEFT_CONTROL>, <&kp LEFT_GUI>;
         };
 
         app_or_spotlight: app_or_spotlight {
@@ -23,11 +23,11 @@
             bindings = <&mo 5>, <&kp LG(SPACE)>;
         };
 
-        ctrl_or_number_layout: ctrl_or_number_layout {
+        shift_or_num: shift_or_num {
             compatible = "zmk,behavior-tap-dance";
-            label = "CTRL_OR_NUMBER_LAYOUT";
+            label = "SHIFT_OR_NUM";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&mo 1>;
+            bindings = <&kp LEFT_SHIFT>, <&mo 1>;
         };
     };
 
@@ -42,10 +42,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB                 &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U          &kp I              &kp O    &kp P     &kp BACKSLASH
-&kp CAPS                &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J          &kp K              &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&ctrl_or_number_layout  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M          &kp COMMA          &kp DOT  &kp FSLH  &mo 3
-                                      &cmd_alt  &mo 2  &kp SPACE    &kp RET  &kp BACKSPACE  &app_or_spotlight
+&kp TAB         &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U          &kp I              &kp O    &kp P     &kp BACKSLASH
+&kp CAPS        &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J          &kp K              &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M          &kp COMMA          &kp DOT  &kp FSLH  &mo 3
+                              &kp LEFT_CONTROL  &mo 2  &kp SPACE    &kp RET  &kp BACKSPACE  &app_or_spotlight
             >;
         };
 
@@ -60,10 +60,10 @@
 
         special_syntax {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp PIPE
-&trans     &kp CARET        &kp AMPERSAND  &kp ASTERISK  &trans      &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS              &kp MINUS              &trans  &trans
-&mo 6      &mo 4            &trans         &trans        &trans      &trans         &kp TILDE         &kp EQUAL          &trans                &trans                 &trans  &trans
-                                           &trans        &trans      &trans         &trans            &kp UNDERSCORE     &trans
+&kp GRAVE  &kp EXCLAMATION   &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp PIPE
+&mo 1      &kp CARET         &kp AMPERSAND  &kp ASTERISK  &trans      &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS              &kp MINUS              &trans  &trans
+&trans     &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_GUI  &trans      &mo 4          &kp TILDE         &kp EQUAL          &trans                &trans                 &trans  &trans
+                                            &trans        &trans      &trans         &trans            &kp UNDERSCORE     &trans
             >;
         };
 
@@ -91,15 +91,6 @@
 &trans  &trans  &kp LA(LS(S))  &kp LA(LS(D))  &kp LA(LS(F))  &trans           &trans         &trans         &trans  &trans  &trans  &trans
 &trans  &trans  &trans         &kp LA(LS(C))  &trans         &kp LA(LS(B))    &kp LA(LS(N))  &kp LA(LS(M))  &trans  &trans  &trans  &trans
                                &trans         &trans         &trans           &trans         &trans         &trans
-            >;
-        };
-
-        upper_case {
-            bindings = <
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &kp LS(BACKSLASH)
-&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)    &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)      &trans
-                              &trans     &trans     &trans       &trans     &trans     &trans
             >;
         };
     };
