@@ -60,10 +60,10 @@
 
         special_syntax {
             bindings = <
-&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp PIPE
-&trans          &kp CARET        &kp AMPERSAND  &kp ASTERISK  &trans      &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS              &kp MINUS              &trans  &trans
-&kp LEFT_SHIFT  &mo 4            &trans         &trans        &trans      &trans         &kp TILDE         &kp EQUAL          &trans                &trans                 &trans  &trans
-                                                &trans        &trans      &trans         &trans            &kp UNDERSCORE     &trans
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR  &kp PERCENT    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp PIPE
+&trans     &kp CARET        &kp AMPERSAND  &kp ASTERISK  &trans      &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PLUS              &kp MINUS              &trans  &trans
+&mo 6      &mo 4            &trans         &trans        &trans      &trans         &kp TILDE         &kp EQUAL          &trans                &trans                 &trans  &trans
+                                           &trans        &trans      &trans         &trans            &kp UNDERSCORE     &trans
             >;
         };
 
@@ -91,6 +91,15 @@
 &trans  &trans  &kp LA(LS(S))  &kp LA(LS(D))  &kp LA(LS(F))  &trans           &trans         &trans         &trans  &trans  &trans  &trans
 &trans  &trans  &trans         &kp LA(LS(C))  &trans         &kp LA(LS(B))    &kp LA(LS(N))  &kp LA(LS(M))  &trans  &trans  &trans  &trans
                                &trans         &trans         &trans           &trans         &trans         &trans
+            >;
+        };
+
+        upper_case {
+            bindings = <
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)    &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &kp LS(BACKSLASH)
+&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)    &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)    &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)      &trans
+                              &trans     &trans     &trans       &trans     &trans     &trans
             >;
         };
     };
