@@ -66,7 +66,7 @@
             bindings = <
 &kp LA(TAB)  &trans  &trans         &kp LA(LS(E))  &trans         &kp LA(LS(T))    &trans         &trans         &trans  &trans  &trans  &trans
 &trans       &trans  &kp LA(LS(S))  &kp LA(LS(D))  &kp LA(LS(F))  &trans           &trans         &trans         &trans  &trans  &trans  &trans
-&trans       &trans  &trans         &kp LA(LS(C))  &trans         &kp LA(LS(B))    &kp LA(LS(N))  &kp LA(LS(M))  &trans  &trans  &trans  &trans
+&mo 4        &trans  &trans         &kp LA(LS(C))  &trans         &kp LA(LS(B))    &kp LA(LS(N))  &kp LA(LS(M))  &trans  &trans  &trans  &trans
                                     &trans         &trans         &trans           &kp LG(TAB)    &trans         &trans
             >;
         };
