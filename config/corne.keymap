@@ -39,19 +39,19 @@
 
         syntax_2 {
             bindings = <
-&trans  &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4     &kp N5          &kp NUMBER_6  &kp N7          &kp N8             &kp N9     &kp N0  &trans
-&trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans          &kp LEFT      &kp DOWN        &kp UP_ARROW       &kp RIGHT  &trans  &trans
-&trans  &trans             &trans                &trans                &bt BT_CLR       &out OUT_BLE    &trans        &trans          &trans             &trans     &trans  &trans
-                                                 &trans                &trans           &trans          &trans        &kp LA(DELETE)  &kp LA(LC(SPACE))
+&kp LA(LC(SPACE))  &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4     &kp N5          &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
+&trans             &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans          &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans             &trans             &trans                &trans                &bt BT_CLR       &out OUT_BLE    &trans        &trans    &trans        &trans     &trans  &trans
+                                                            &trans                &trans           &trans          &trans        &trans    &trans
             >;
         };
 
         app {
             bindings = <
-&kp LA(TAB)  &trans  &trans         &kp LA(LS(E))  &trans         &kp LA(LS(T))    &trans         &trans         &trans  &trans  &trans  &trans
-&trans       &trans  &kp LA(LS(S))  &kp LA(LS(D))  &kp LA(LS(F))  &trans           &trans         &trans         &trans  &trans  &trans  &trans
-&trans       &trans  &trans         &kp LA(LS(C))  &trans         &kp LA(LS(B))    &kp LA(LS(N))  &kp LA(LS(M))  &trans  &trans  &trans  &trans
-                                    &trans         &trans         &trans           &kp LG(TAB)    &trans         &trans
+&kp LA(TAB)  &trans  &trans         &kp LA(LS(E))  &trans         &kp LA(LS(T))    &trans         &trans             &trans  &trans  &trans  &trans
+&trans       &trans  &kp LA(LS(S))  &kp LA(LS(D))  &kp LA(LS(F))  &trans           &trans         &trans             &trans  &trans  &trans  &trans
+&trans       &trans  &trans         &kp LA(LS(C))  &trans         &kp LA(LS(B))    &kp LA(LS(N))  &kp LA(LS(M))      &trans  &trans  &trans  &trans
+                                    &trans         &trans         &trans           &kp LG(TAB)    &kp LA(BACKSPACE)  &trans
             >;
         };
 
