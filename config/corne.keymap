@@ -57,10 +57,10 @@
 
         browser {
             bindings = <
-&trans  &kp LS(LA(LEFT_BRACKET))  &kp LS(LA(RIGHT_BRACKET))  &trans  &kp LG(R)          &kp LG(T)    &trans                &trans                     &trans                    &kp LG(L)              &trans  &trans
-&trans  &trans                    &trans                     &trans  &trans             &trans       &kp LG(LEFT_BRACKET)  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(LEFT_BRACKET))  &kp LG(RIGHT_BRACKET)  &trans  &trans
-&trans  &trans                    &trans                     &trans  &kp LC(LS(EQUAL))  &trans       &trans                &trans                     &trans                    &trans                 &trans  &trans
-                                                             &trans  &trans             &trans       &kp LS(LG(NUMBER_2))  &kp LG(W)                  &trans
+&trans  &trans                    &trans  &trans  &kp LG(R)                  &kp LG(T)    &trans                &trans                     &trans                    &kp LG(L)              &trans  &trans
+&trans  &kp LA(LS(LEFT_BRACKET))  &trans  &trans  &kp LA(LS(RIGHT_BRACKET))  &trans       &kp LG(LEFT_BRACKET)  &kp LG(LS(RIGHT_BRACKET))  &kp LG(LS(LEFT_BRACKET))  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&trans  &trans                    &trans  &trans  &kp LC(LS(EQUAL))          &trans       &trans                &trans                     &trans                    &trans                 &trans  &trans
+                                          &trans  &trans                     &trans       &kp LS(LG(NUMBER_2))  &kp LG(W)                  &trans
             >;
         };
 
