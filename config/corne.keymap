@@ -66,7 +66,7 @@
 
         window_manager {
             bindings = <
-&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)      &kp LA(N5)            &trans               &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))  &trans
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)      &kp LA(NUMBER_4)      &kp LA(N5)           &kp LA(LS(NUMBER_1))  &kp LA(LS(NUMBER_2))  &kp LA(LS(NUMBER_3))  &kp LA(LS(NUMBER_4))  &kp LA(LS(N5))  &trans
 &trans  &kp LC(LA(H))     &kp LC(LA(L))     &trans                &trans                &trans               &kp LA(H)             &kp LA(J)             &kp LA(K)             &kp LA(L)             &trans          &trans
 &trans  &kp LS(LA(H))     &kp LS(LA(L))     &trans                &trans                &trans               &trans                &trans                &trans                &trans                &trans          &trans
                                             &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(LS(Y)))    &kp LA(LS(P))         &kp LA(P)             &trans
