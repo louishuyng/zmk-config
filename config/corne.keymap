@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "APP_OR_UTILS";
             #binding-cells = <0>;
-            bindings = <&lt 3 LG(SPACE)>, <&kp LC(LEFT_ALT)>;
+            bindings = <&mo 3>, <&kp LC(LEFT_ALT)>;
         };
     };
 
