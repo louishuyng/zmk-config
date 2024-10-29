@@ -11,11 +11,11 @@
 
 / {
     behaviors {
-        cmd_or_utils: cmd_or_utils {
+        app_or_utils: app_or_utils {
             compatible = "zmk,behavior-tap-dance";
-            label = "CMD_OR_UTILS";
+            label = "APP_OR_UTILS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&kp LC(LEFT_ALT)>;
+            bindings = <&kp LA(LEFT_SHIFT)>, <&kp LC(LEFT_ALT)>;
         };
     };
 
@@ -30,10 +30,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E  &kp R           &kp T          &kp Y        &kp U          &kp I          &kp O    &kp P     &lt 5 BACKSLASH
-&kp CAPSLOCK      &kp A  &kp S  &kp D  &kp F           &kp G          &kp H        &kp J          &kp K          &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V           &kp B          &kp N        &kp M          &kp COMMA      &kp DOT  &kp FSLH  &lt 3 LG(SPACE)
-                                &mo 4  &kp LEFT_SHIFT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &cmd_or_utils
+&kp TAB           &kp Q  &kp W  &kp E          &kp R           &kp T          &kp Y        &kp U          &kp I                   &kp O    &kp P     &lt 5 BACKSLASH
+&kp CAPSLOCK      &kp A  &kp S  &kp D          &kp F           &kp G          &kp H        &kp J          &kp K                   &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp V           &kp B          &kp N        &kp M          &kp COMMA               &kp DOT  &kp FSLH  &mo 4
+                                &app_or_utils  &kp LEFT_SHIFT  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_GUI LG(SPACE)
             >;
         };
 
@@ -48,10 +48,10 @@
 
         syntax_2 {
             bindings = <
-&kp LA(LC(SPACE))  &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4     &kp N5          &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
-&trans             &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans          &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans             &trans             &trans                &trans                &bt BT_CLR       &out OUT_BLE    &trans        &trans    &trans        &trans     &trans  &trans
-                                                            &trans                &trans           &trans          &trans        &trans    &trans
+&trans  &kp NUMBER_1       &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4     &kp N5               &kp NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0  &trans
+&trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP  &trans               &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans             &trans                &trans                &bt BT_CLR       &out OUT_BLE         &trans        &trans    &trans        &trans     &trans  &trans
+                                                 &trans                &trans           &kp LA(LC(SPACE))    &trans        &trans    &trans
             >;
         };
 
